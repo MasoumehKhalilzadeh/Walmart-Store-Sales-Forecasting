@@ -82,6 +82,25 @@ This project focuses on forecasting weekly sales for Walmart using classical and
 
 ![3](https://github.com/user-attachments/assets/7b85b6e5-6a3a-4814-8554-0283b8aa63c1)
 
+### 📃 ARIMA Model Summary
+
+The ARIMA(1,1,1) model was selected based on ACF/PACF diagnostics and fitted to the weekly sales data. Below is the model output summary:
+
+
+![Screenshot 2025-03-28 113435](https://github.com/user-attachments/assets/0efd75ca-be3e-4d36-90af-fd2a09c6db5f)
+
+
+### 🧠 Interpretation:
+- **ar.L1 (0.456)**: The AR(1) term is statistically significant (`p < 0.001`), indicating strong autocorrelation with lag 1.
+- **ma.L1 (−0.976)**: The MA(1) term is also significant and negative, which suggests short-term corrections in forecast errors.
+- **sigma²**: Represents the variance of the residuals (large due to scale of weekly sales).
+- **Ljung-Box Q (p = 0.29)**: No significant autocorrelation in residuals → model is well-fitted.
+- **Jarque-Bera (p = 0.00)**: Residuals are not normally distributed (common with sales data).
+- **Skew = 1.37 / Kurtosis = 12.02**: Residuals are right-skewed with heavy tails, indicating potential outliers or holiday effects.
+
+> ✅ Overall, this ARIMA(1,1,1) model fits the time series reasonably well, capturing the autocorrelation structure and producing low forecast error.
+
+
 
 ### ARIMA Forecasting
 
