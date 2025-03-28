@@ -57,6 +57,52 @@ This project focuses on forecasting weekly sales for Walmart using classical and
 
 ## 📈 Results & Interpretation
 
+### Exploratory Data Analysis (EDA)
+
+- Visualized sales trends over time.
+- Observed spikes around holidays and end-of-year periods.
+
+![1](https://github.com/user-attachments/assets/5db33104-4e29-450b-a236-588912d59dea)
+
+
+
+### Time Series Decomposition
+
+- Used additive decomposition to extract trend, seasonality, and residuals from the time series.
+
+
+![2](https://github.com/user-attachments/assets/93566fa6-79a5-473d-ba55-4f1af163b9e0)
+
+
+
+### Stationarity Check & Model Diagnostics
+
+- Differenced the data and plotted ACF/PACF to determine ARIMA parameters.
+
+
+![3](https://github.com/user-attachments/assets/7b85b6e5-6a3a-4814-8554-0283b8aa63c1)
+
+
+### ARIMA Forecasting
+
+- Forecasted 12 future weeks using ARIMA(1,1,1).
+- Lower error compared to Prophet.
+
+
+![4](https://github.com/user-attachments/assets/164b4508-5bbd-4258-bb02-6387a7e8c44f)
+
+
+
+### Prophet Forecasting
+
+- Forecasted 12 future weeks with Prophet model.
+- Included uncertainty intervals.
+
+
+![5](https://github.com/user-attachments/assets/e049c4c5-0c31-4715-9b58-dedc913f984f)
+
+
+
 - **ARIMA outperformed Prophet** significantly in this project, producing a much lower forecasting error (MAE).
 - **ARIMA MAE:** ~$1.44M  
 - **Prophet MAE:** ~$8.26M
