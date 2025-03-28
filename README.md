@@ -70,9 +70,7 @@ This project focuses on forecasting weekly sales for Walmart using classical and
 
 - Used additive decomposition to extract trend, seasonality, and residuals from the time series.
 
-
-![2](https://github.com/user-attachments/assets/93566fa6-79a5-473d-ba55-4f1af163b9e0)
-
+![2](https://github.com/user-attachments/assets/a28f9bb4-15f8-4101-ae08-21dafff5f032)
 
 
 ### Stationarity Check & Model Diagnostics
@@ -121,6 +119,7 @@ The ARIMA(1,1,1) model was selected based on ACF/PACF diagnostics and fitted to 
 ![5](https://github.com/user-attachments/assets/e049c4c5-0c31-4715-9b58-dedc913f984f)
 
 
+## Forecast Accuracy Comparison: ARIMA vs Prophet
 
 - **ARIMA outperformed Prophet** significantly in this project, producing a much lower forecasting error (MAE).
 - **ARIMA MAE:** ~$1.44M  
@@ -140,10 +139,7 @@ The ability to accurately forecast weekly sales is crucial for inventory plannin
 
 ## 📈 Future Improvements
 
-- Model sales at the **store + department** level for finer granularity.
-- Tune Prophet with holiday regressors and changepoint detection.
-- Explore machine learning-based forecasting methods (e.g., XGBoost, LSTM).
-- Evaluate using additional metrics (MAPE, RMSE).
+For the next project, I will explore machine learning-based forecasting methods (e.g., XGBoost, LSTM) and evaluate them using additional metrics (MAPE, RMSE).
 
 ---
 
